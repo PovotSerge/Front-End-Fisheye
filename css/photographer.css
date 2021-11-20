@@ -5,6 +5,7 @@ body {
 .containeur {
      max-width: 1240px;
      margin: 0 auto;
+     margin-bottom: 500px;
 }
 
 #contact_modal {
