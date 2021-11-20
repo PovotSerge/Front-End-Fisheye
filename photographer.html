@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
@@ -11,21 +11,90 @@
     <title>Fisheye - photographe</title>
   </head>
   <body>
-    <header>
-      <img src="assets/images/logo.png" class="logo" />
-    </header>
-    <main id="main">
-      <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">
-          Contactez-moi
-        </button>
-      </div>
-    </main>
+    <div class="containeur">
+      <header>
+        <img src="assets/images/logo.png" alt="Logo" class="logo1" />
+      </header>
+      <main id="main">
+        <div class="photograph-header">
+          <div class="title-info-person">
+            <span class="person-span1">Mimi Keel</span>
+            <span class="person-span2">London, UK</span>
+            <span class="person-span3">Voir le beau dans le quotidien</span>
+          </div>
+          <button class="contact_button" onclick="displayModal()">
+            Contactez-moi
+          </button>
+          <div class="image-person">
+            <img
+              src="img/user.svg"
+              alt="Mimi Keel"
+              class="image-person-photo"
+            />
+          </div>
+        </div>
+        <div class="trier">
+          <div class="trier-par">Trier par</div>
+          <div class="btn-trier">
+            <button class="btn-populaire">Populairité</button>
+          </div>
+        </div>
+        <div class="containeur-images">
+          <div class="containte-images">
+            <div class="image1">
+              <img
+                src="images_video-mimi/Animals_Rainbow.jpg"
+                alt="Rainbow"
+                class="image-size"
+              />
+            </div>
+            <span class="img-title">Arc-en-cie</span>
+            <span class="img-nubmbre">11</span>
+            <span class="img-heart"
+              ><img src="img/heart.svg" alt="Heart"
+            /></span>
+          </div>
+          <div class="containte-images">
+            <div class="image1">
+              <img
+                src="images_video-mimi/Travel_Lonesome.jpg"
+                alt="Rainbow"
+                class="image-size"
+              />
+            </div>
+            <span class="img-title">Solitude</span>
+            <span class="img-nubmbre">12</span>
+            <span class="img-heart"
+              ><img src="img/heart.svg" alt="Heart"
+            /></span>
+          </div>
+          <div class="containte-images">
+            <div class="image1">
+              <img
+                src="images_video-mimi/Animals_Rainbow.jpg"
+                alt="Rainbow"
+                class="image-size"
+              />
+            </div>
+            <span class="img-title">Arc-en-cie</span>
+            <span class="img-nubmbre">11</span>
+            <span class="img-heart"
+              ><img src="img/heart.svg" alt="Heart"
+            /></span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- /containeur -->
     <div id="contact_modal">
       <div class="modal">
         <header>
           <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
+          <img
+            src="assets/icons/close.svg"
+            alt="Close"
+            onclick="closeModal()"
+          />
         </header>
         <form>
           <div>
@@ -42,7 +111,7 @@
           </div>
           <div>
             <label>Votre message</label>
-            <textarea name="" id="" cols="110" rows="15"></textarea>
+            <textarea></textarea>
           </div>
           <button class="contact_button">Envoyer</button>
         </form>

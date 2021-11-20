@@ -1,11 +1,61 @@
+body {
+    font-family: "DM Sans",sans-serif;
+}
+
+.containeur {
+     max-width: 1240px;
+     margin: 0 auto;
+}
+
 #contact_modal {
     display: none;
+    margin-top: 30px;
+}
+
+.logo1 {
+    height: 50px;
 }
 
 .photograph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
     background-color: #FAFAFA;
     height: 300px;
-    margin: 0 100px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.title-info-person {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-span1 {
+    font-size: 64px;
+    line-height: 83px;
+    color:#D3573C;
+    margin-top: -60px;
+}
+
+.person-span2 {
+    font-size: 24px;
+    line-height: 31px;
+    color:#901C1C;
+}
+
+.person-span3 {
+    font-size: 18px;
+    line-height: 23px;
+    color:#525252;
+    padding-top: 20px;
+}
+
+.image-person-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .contact_button {
@@ -19,6 +69,60 @@
     background-color: #901C1C;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.trier {
+    display: flex;
+    align-items:center;
+    margin-top: 10px;
+}
+
+.trier-par {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+    color:#000;
+}
+
+.btn-trier {
+    padding-left: 20px;
+}
+
+.btn-populaire {
+    width: 170px;
+    height: 69px;
+    color:#fff;
+    background: #901C1C;
+    border:none;
+    border-radius: 4px;
+}
+
+.containeur-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image-size {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border: none;
+    border-radius:5px;
+}
+
+.img-title {
+    color:#901C1C;
+    font-size: 24px;
+    line-height: 31px;
+    padding-right: 180px;
+}
+
+.img-nubmbre {
+    width: 22px;
+    height: 31px;
+    font-size: 24px;
+    color:#901C1C;
 }
 
 .modal {
@@ -73,4 +177,12 @@ form input {
     height: 68px;
     border: none;
     border-radius: 5px;
+}
+
+form textarea {
+    width: 100%;
+    height: 150px;
+    min-height: 150px;
+    border:none;
+    border-radius:5px;
 }
