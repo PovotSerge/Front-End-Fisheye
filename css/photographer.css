@@ -30,6 +30,7 @@ body {
 .title-info-person {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .person-span1 {
@@ -40,9 +41,20 @@ body {
 }
 
 .person-span2 {
+    display: inline;
     font-size: 24px;
     line-height: 31px;
     color:#901C1C;
+}
+
+.person-span4 {
+    display: inline;
+    font-size: 24px;
+    line-height: 31px;
+    color: #901C1C;
+    position: absolute;
+    left: 100px;
+    top: 25px;
 }
 
 .person-span3 {
@@ -75,7 +87,7 @@ body {
 .trier {
     display: flex;
     align-items:center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .trier-par {
@@ -102,6 +114,12 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.image1 {
+    display: flex;
+    flex-direction: column;
 }
 
 .image-size {
@@ -110,13 +128,13 @@ body {
     object-fit: cover;
     border: none;
     border-radius:5px;
+    margin-bottom: 80px;
 }
 
 .img-title {
     color:#901C1C;
     font-size: 24px;
     line-height: 31px;
-    padding-right: 180px;
 }
 
 .img-nubmbre {
@@ -187,3 +205,4 @@ form textarea {
     border:none;
     border-radius:5px;
 }
+
